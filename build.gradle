@@ -30,13 +30,4 @@ dependencies {
 	testImplementation 'org.springframework.security:spring-security-test'
 }
 
-bootJar{
-	mainClass = 'com.organized.comilation'
-}
-
-bootRun{
-	String activeProfile = System.properties['spring.profiles.active']
-	systemProperty "spring.profiles.active", activeProfile
-}
-
 
